@@ -6,12 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-marca
-modelo
-km:integer
-tipo:integer
-portas:integer
-matricula
-cor
-combustivel:integer
-descricao:text
+#marca
+#modelo
+#km:integer
+#tipo:integer
+#portas:integer
+#matricula
+#cor
+#combustivel:integer
+#descricao:text
