@@ -1,12 +1,15 @@
-<% @carros.each do |item| %>
+<% @carros.each do |carro| %>
     <div class="col-md-3 d-flex ftco-animate">
-        <div class="blog-entry justify-content-end">
+        <div class="blog-entry justify-content-end card" style="padding: 5px">
             <div class="text">
-                <a href="blog-single.html" class="block-20 img" style="background-image: url('/templete/images/image_1.jpg');"></a>
+                <a href="#" class="block-20 img" style="background-image: url(<%= url_for(carro.destaque) %>);"></a>
                 <div class="meta mb-1">
-                    <div><a href="#">April 12, 2020</a></div>
+                    <a href="#">
+                        <%= carro.created_at.strftime("%d/%m/%Y") %> 
+                        <span style="float: right;"><%= carro.preco_total.to_kwanza %></span>
+                    </a>
                 </div>
-                <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
+                <h4 class="heading" style="font-weight: 100;"><a href="#"><%= carro.marca %> - <%= carro.modelo %></a></h4>
             </div>
         </div>
     </div>
