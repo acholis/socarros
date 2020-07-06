@@ -1,4 +1,8 @@
 class Carro < ApplicationRecord
-    enum tipo: {  }    
-    enum combustivel: {  }
+    has_one_attached :destaque
+    has_many_attached :files
+
+    #enum combustivel: ['Gasolina', 'Gasoleo']
 end
+
+

@@ -15,10 +15,6 @@
   <%= @carro.km %>
 </p>
 
-<p>
-  <strong>Tipo:</strong>
-  <%= @carro.tipo %>
-</p>
 
 <p>
   <strong>Portas:</strong>
@@ -44,6 +40,18 @@
   <strong>Descricao:</strong>
   <%= @carro.descricao %>
 </p>
+
+<hr>
+
+<h5>Files</h5>
+ 
+<ul>
+ <% @carro.files.each do |file| %>
+    <%= image_tag url_for(file) %>
+ <% end %>
+</ul>
+
+<hr>
 
 <%= link_to 'Edit', edit_carro_path(@carro) %> |
 <%= link_to 'Back', carros_path %>

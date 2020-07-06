@@ -27,11 +27,6 @@
   </div>
 
   <div class="field">
-    <%= form.label :tipo %>
-    <%= form.number_field :tipo %>
-  </div>
-
-  <div class="field">
     <%= form.label :portas %>
     <%= form.number_field :portas %>
   </div>
@@ -50,6 +45,21 @@
     <%= form.label :combustivel %>
     <%= form.number_field :combustivel %>
   </div>
+
+  <br> <br>
+  <div class="field">
+    <%= form.label :files %>
+    <%= form.file_field :files, multiple: true %>
+  </div>
+
+  <br> <br>
+
+  <div class="field">
+    <%= form.label :destaque %>
+    <%= form.file_field :destaque %>
+  </div>
+
+  <br> <br>
 
   <div class="field">
     <%= form.label :descricao %>
