@@ -13,8 +13,7 @@
         <div class="row ftco-animate">
             <div class="col-md-12">
                 <div class="card">
-                    <%= image_tag(@carro.destaque) %>
-                    
+                    <%= image_tag(@carro.destaque.variant(resize: '1000x1000')) %>
                 </div>
             </div>
         </div>
@@ -33,42 +32,15 @@
                         </a>
                     </div>
                 <% end %>
-
             </div>
-
-
-        
         </div>
 
         <div class="col-md-6">
-            <p>
-            <strong>Km:</strong>
-            <%= @carro.km %>
-            </p>
-            <p>
-            <strong>Portas:</strong>
-            <%= @carro.portas %>
-            </p>
-
-            <p>
-            <strong>Matricula:</strong>
-            <%= @carro.matricula %>
-            </p>
-
-            <p>
-            <strong>Cor:</strong>
-            <%= @carro.cor %>
-            </p>
-
-            <p>
-            <strong>Combustivel:</strong>
-            <%= @carro.combustivel %>
-            </p>
-
-            <p>
-            <strong>Descricao:</strong>
-            <%= @carro.descricao %>
-            </p>
+            <p><strong>Km:</strong><%= @carro.km %></p>
+            <p><strong>Matricula:</strong><%= @carro.matricula %></p>
+            <p><strong>Cor da viatura: </strong><%= @carro.cor %></p>
+            <p><strong>Tipo: </strong><%= @carro.combustivel %></p>
+            <p><strong>Descrição :</strong><%= @carro.descricao %></p>
         </div>
     </div>
 
