@@ -13,7 +13,7 @@
         <div class="row ftco-animate">
             <div class="col-md-12">
                 <div class="card">
-                    <%= image_tag(@carro.destaque.variant(resize: '1000x1000')) %>
+                    <%= image_tag(@carro.destaque, class: "img-fluid") %>
                 </div>
             </div>
         </div>
@@ -26,9 +26,9 @@
         <div class="col-md-6">
             <div class="row">
                 <% @carro.files.each do |file| %>
-                    <div class="col-md-4 d-flex ftco-animate">
+                    <div class="col-md-4 d-flex ftco-animate" style="margin-bottom: 20px;">
                         <a href="<%= url_for(file) %>" data-imagelightbox="demo">
-                            <img src="<%= url_for(file) %>" class="img-fluid">
+                            <img src="<%= url_for(file) %>" class="img-fluid img-thumbnail">
                         </a>
                     </div>
                 <% end %>
@@ -36,10 +36,24 @@
         </div>
 
         <div class="col-md-6">
-            <p><strong>Km:</strong><%= @carro.km %></p>
-            <p><strong>Matricula:</strong><%= @carro.matricula %></p>
+            <p>
+                <% if @carro.disponivel %>
+                    <span class="badge badge-success">Disponível</span>
+                <% else %>
+                    <span class="badge badge-danger">Indisponível</span>
+                <% end %>
+
+                <button type="button" class="btn btn-interesse btn-sm" data-toggle="modal" data-target="#entrar-em-contacto">
+                    Estou interessado
+                </button>
+            </p>
+
+
+            <p><strong>Preço: </strong><%= @carro.preco_total.to_kwanza %></p>
+            <p><strong>Marca: </strong><%= @carro.marca %></p>
+            <p><strong>Modelo: </strong><%= @carro.modelo %></p>
             <p><strong>Cor da viatura: </strong><%= @carro.cor %></p>
-            <p><strong>Tipo: </strong><%= @carro.combustivel %></p>
+            <p><strong>Km: </strong><%= number_with_delimiter(@carro.km) %></p>
             <p><strong>Descrição :</strong><%= @carro.descricao %></p>
         </div>
     </div>
@@ -57,3 +71,28 @@
 <script>
     $('a[data-imagelightbox="demo"]').imageLightbox();
 </script>
+
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="entrar-em-contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+

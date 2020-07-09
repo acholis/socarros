@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+
+ .btn-interesse{
+    background: #ffc107 !important;
+    border: 1px solid #ffc107 !important;
+    color: #fff !important;
+    float: right;
+ }
