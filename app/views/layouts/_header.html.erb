@@ -1,0 +1,63 @@
+    <header>
+        <!-- Header Start -->
+        <div class="header-area">
+            <div class="main-header ">
+                <div class="header-top d-none d-lg-block">
+                    <!-- Left Social -->
+                    <div class="header-left-social">
+                        <ul class="header-social">    
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li> <a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="container">
+                        <div class="col-xl-12">
+                            <div class="row d-flex justify-content-between align-items-center">
+                                <div class="header-info-left">
+                                    <ul>     
+                                        <li>hello@helpcash.cash</li>
+                                    </ul>
+                                </div>
+                                <div class="header-info-right">
+
+                                    <ul>    
+                                        <li><a href="/users/sign_in"><i class="ti-user"></i><%= t('login') %></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom header-sticky">
+                    <div class="container">
+                        <div class="menu-wrapper">
+                            <div class="main-menu d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">                                                                                          
+                                        <li><a href="<%= root_path %>" style="padding-top: 0; padding-bottom: 0;"><img src="/logo.png" width="60" alt=""></a></li>
+                                        <li><a href="<%= root_path %>"><%= t('home') %></a></li>
+                                        <li><a href="https://www.helpcash.cash/">Helpcash</a></li>
+                                        <li><a href="<%= consult_request_path %>"><%= t('consult_request') %></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- Header-btn -->
+                            <div class="header-search d-none d-lg-block">
+                                <a href="<%= request.path %>?locale=en" class="mr-2"><span class="flag-icon flag-icon-gb"></span></a>
+                                <a href="<%= request.path %>?locale=fr" class="mr-2"><span class="flag-icon flag-icon-fr"></span></a>
+                                <a href="<%= request.path %>?locale=pt" class="mr-2"><span class="flag-icon flag-icon-pt"></span></a>
+                                <a href="<%= new_solicitation_path %>" class="genric-btn primary circle"><%= t('help_now') %></a>
+                            </div>
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
