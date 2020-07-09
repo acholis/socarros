@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  telefone: MyString
+  proposta: 9.99
+  visita: 2020-07-09 17:08:23
+
+two:
+  nome: MyString
+  telefone: MyString
+  proposta: 9.99
+  visita: 2020-07-09 17:08:23

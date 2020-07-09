@@ -10,7 +10,8 @@ class SiteController < ApplicationController
   end
 
   def detailhes
-    
+    @interess = Interesse.new(carro_id: @carro.id)
+
   end
 
   private

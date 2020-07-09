@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @interess.nome %>
+</p>
+
+<p>
+  <strong>Telefone:</strong>
+  <%= @interess.telefone %>
+</p>
+
+<p>
+  <strong>Proposta:</strong>
+  <%= @interess.proposta %>
+</p>
+
+<p>
+  <strong>Visita:</strong>
+  <%= @interess.visita %>
+</p>
+
+<%= link_to 'Edit', edit_interess_path(@interess) %> |
+<%= link_to 'Back', interesses_path %>

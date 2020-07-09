@@ -15,5 +15,6 @@ ActiveSupport::Inflector.inflections(:pt) do |inflect|
   inflect.acronym 'RESTful'
 
   inflect.irregular "carro", "carros"
+  inflect.irregular "interesse", "interesses"
 
 end

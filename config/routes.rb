@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :interesses
   resources :carros
   root 'site#index'
 
