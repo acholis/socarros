@@ -28,7 +28,7 @@ class InteressesController < ApplicationController
 
     respond_to do |format|
       if @interess.save
-        format.html { redirect_to @interess, notice: 'Interesse was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Interesse was successfully created.' }
         format.json { render :show, status: :created, location: @interess }
       else
         format.html { render :new }

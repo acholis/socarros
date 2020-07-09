@@ -1,8 +1,6 @@
 class CarrosController < ApplicationController
   before_action :set_carro, only: [:show, :edit, :update, :destroy]
 
-  # GET /carros
-  # GET /carros.json
   def index
     @carros = Carro.all
   end
