@@ -11,30 +11,16 @@
                 </button>
             </div>
 
-            <%= form_with(model: @interess, local: true) do |form| %>
+            <%= simple_form_for @interess do |f| %>
+
 
                 <div class="modal-body">
-                    <%= form.hidden_field :carro_id %>
-
-                    <div class="field">
-                        <%= form.label :nome %>
-                        <%= form.text_field :nome %>
-                    </div>
-
-                    <div class="field">
-                        <%= form.label :telefone %>
-                        <%= form.text_field :telefone %>
-                    </div>
-
-                    <div class="field">
-                        <%= form.label :proposta %>
-                        <%= form.text_field :proposta %>
-                    </div>
-
-                    <div class="field">
-                        <%= form.label :visita %>
-                        <%= form.datetime_select :visita, label: "Quando estas disponível para ver ?" %>
-                    </div>
+                    <%= f.hidden_field :carro_id %>
+                    
+                    <%= f.input :nome, input_html: { class: 'form-control form-control-sm' }  %>
+                    <%= f.input :telefone, input_html: { class: 'form-control form-control-sm' }  %>
+                    <%= f.input :proposta, input_html: { class: 'form-control form-control-sm' }  %>
+                    <%# f.input :visita, input_html: { class: 'form-control form-control-sm' } , label: "Quando estas disponível para ver ?"  %>
 
                 </div>
 
@@ -42,6 +28,7 @@
                     <button type="button" class="btn btn-secondary btn-sm text-light" data-dismiss="modal">Cancelar</button>
                     <button type="submit" class="btn btn-interesse btn-sm text-light">Enviar</button>
                 </div>
+
 
             <% end %>
 
