@@ -1,57 +1,56 @@
+<!-- Begin Page Content -->
+<div class="container-fluid">
+    <br>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h1 class="h3 mb-2 text-gray-800">Detalhes do carro</h1>
+        </div>
+    </div>
+
+    <div class="card shadow mb-4">
+        <div class="card-body">
+
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <p>
+                        <% if @carro.disponivel %>
+                            <span class="badge badge-success">Disponível</span>
+                        <% else %>
+                            <span class="badge badge-danger">Indisponível</span>
+                        <% end %>
+                        <%= link_to 'Actualizar', edit_carro_path(@carro), class: "btn btn-interesse btn-sm" %> |
+                    </p>
+                    <p><strong>Preço: </strong><%= @carro.preco_total.to_kwanza %></p>
+                    <p><strong>Marca: </strong><%= @carro.marca %></p>
+                    <p><strong>Modelo: </strong><%= @carro.modelo %></p>
+                    <p><strong>Cor da viatura: </strong><%= @carro.cor %></p>
+                    <p><strong>Km: </strong><%= number_with_delimiter(@carro.km) %></p>
+                    <p><strong>Descrição :</strong><%= @carro.descricao %></p>
+                </div>
+
+                <div class="col-lg-6 col-sm-12">
+                    <%= image_tag(@carro.destaque, class: "img-fluid") %>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <% @carro.files.each do |file| %>
+                    <div class="col-md-3 d-flex ftco-animate" style="margin-bottom: 20px;">
+                        <img src="<%= url_for(file) %>" class="img-fluid img-thumbnail">
+                    </div>
+                <% end %>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Marca:</strong>
-  <%= @carro.marca %>
-</p>
-
-<p>
-  <strong>Modelo:</strong>
-  <%= @carro.modelo %>
-</p>
-
-<p>
-  <strong>Km:</strong>
-  <%= @carro.km %>
-</p>
 
 
-<p>
-  <strong>Portas:</strong>
-  <%= @carro.portas %>
-</p>
-
-<p>
-  <strong>Matricula:</strong>
-  <%= @carro.matricula %>
-</p>
-
-<p>
-  <strong>Cor:</strong>
-  <%= @carro.cor %>
-</p>
-
-<p>
-  <strong>Combustivel:</strong>
-  <%= @carro.combustivel %>
-</p>
-
-<p>
-  <strong>Descricao:</strong>
-  <%= @carro.descricao %>
-</p>
-
-<hr>
-
-<h5>Files</h5>
- 
-<ul>
- <% @carro.files.each do |file| %>
-    <%= image_tag url_for(file) %>
- <% end %>
-</ul>
-
-<hr>
-
-<%= link_to 'Edit', edit_carro_path(@carro) %> |
-<%= link_to 'Back', carros_path %>
