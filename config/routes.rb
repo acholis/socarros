@@ -7,5 +7,7 @@ Rails.application.routes.draw do
   get '/detailhes/:id',    to: 'site#detailhes',       as: 'detailhes'
   get '/dashboard',                         to: 'dashboard#index',            as: 'dashboard'
 
+  get '/about_us',      to: 'site#about_us',    as: 'about_us'
+
   
 end

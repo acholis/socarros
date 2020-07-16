@@ -12,6 +12,10 @@ class SiteController < ActionController::Base
     @interess = Interesse.new(carro_id: @carro.id)
   end
 
+  def about_us
+    
+  end
+
   private
     def set_carro
       @carro = Carro.find(params[:id])
