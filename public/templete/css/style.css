@@ -8219,7 +8219,7 @@ h1, h2, h3, h4, h5,
 
 .hero-wrap {
   width: 100%;
-  height: 850px;
+  height: 550px;
   position: inherit;
   background-size: cover;
   background-repeat: no-repeat;
@@ -8244,7 +8244,7 @@ h1, h2, h3, h4, h5,
       height: 500px !important; }
 
 .slider-text {
-  height: 850px; }
+  height: 550px; }
   .slider-text h1 {
     font-size: 60px;
     color: #000000;
