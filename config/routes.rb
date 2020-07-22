@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :quero_carros
   devise_for :users
   resources :interesses
   resources :carros

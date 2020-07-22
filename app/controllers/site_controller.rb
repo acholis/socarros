@@ -6,6 +6,7 @@ class SiteController < ActionController::Base
   def index
     redirect_to dashboard_path if user_signed_in?
     @carros = Carro.all
+    @quero_carro = QueroCarro.new
   end
 
   def detailhes

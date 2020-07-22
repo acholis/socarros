@@ -1,0 +1,2 @@
+class QueroCarro < ApplicationRecord
+end
