@@ -19,7 +19,8 @@
                         <% else %>
                             <span class="badge badge-danger">Indisponível</span>
                         <% end %>
-                        <%= link_to 'Actualizar', edit_carro_path(@carro), class: "btn btn-interesse btn-sm" %> |
+                        <%= link_to 'Actualizar', edit_carro_path(@carro), class: "btn btn-interesse btn-sm" %>
+                        <%= link_to 'Destroy', @carro, class: "btn btn-danger btn-sm mr-2", style: "float: right;", method: :delete, data: { confirm: 'Are you sure?' } %> |
                     </p>
                     <p><strong>Preço: </strong><%= @carro.preco_total.to_kwanza %></p>
                     <p><strong>Marca: </strong><%= @carro.marca %></p>
