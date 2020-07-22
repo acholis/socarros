@@ -52,6 +52,9 @@ class CarrosController < ApplicationController
   # DELETE /carros/1
   # DELETE /carros/1.json
   def destroy
+    @carro.destaque.purge
+    @carro.files.purge
+
     @carro.destroy
     respond_to do |format|
       format.html { redirect_to carros_url, notice: 'Carro was successfully destroyed.' }

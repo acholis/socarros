@@ -1,5 +1,24 @@
 @import "animate.scss";
 
+.bg-gradient-primary {
+   background-color: #ffc107 !important;
+   background-image: linear-gradient(180deg,#ffc107 10%,#bd8e00 100%) !important;
+   background-size: cover;
+}
+
+.icon:after{
+   border-color: transparent transparent #ffc107 transparent!important;
+}
+
+.icon:before{
+   border-color: #ffc107 transparent transparent transparent!important;
+}
+
+.icon{
+   background: #ffc107!important;
+}
+
+
 
  .btn-interesse{
     background: #ffc107 !important;
@@ -13,7 +32,7 @@
  }
 
  .slider-text h1 {
-   color: #fff!important;
+   color: #ffc107!important;
 }
 
 .btn{
@@ -25,6 +44,7 @@
    background: #ffc107 !important;
    border: 1px solid #ffc107 !important;
 }
+
 
 //==============================================================================================
 
