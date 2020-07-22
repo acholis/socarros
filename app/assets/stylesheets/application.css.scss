@@ -6,18 +6,21 @@
    background-size: cover;
 }
 
-.icon:after{
+.icon-ftp.icon:after{
    border-color: transparent transparent #ffc107 transparent!important;
 }
 
-.icon:before{
+.icon-ftp.icon:before{
    border-color: #ffc107 transparent transparent transparent!important;
 }
 
-.icon{
+.icon-ftp.icon{
    background: #ffc107!important;
 }
 
+.bg-df {
+   background-color: #ffc107!important;
+}
 
 
  .btn-interesse{
