@@ -41,14 +41,14 @@
 
 
 .pulse-button {
-   box-shadow: 0 0 0 0 #ffc107;
-   background-size: cover;
-   background-repeat: no-repeat;
-   cursor: pointer;
-   -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-   -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-   -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-   animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+   box-shadow: 0 0 0 0 #ffc107!important;
+   background-size: cover!important;
+   background-repeat: no-repeat!important;
+   cursor: pointer!important;
+   -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1)!important;
+   -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1)!important;
+   -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1)!important;
+   animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1)!important;
 }
 
 .pulse-button:hover {

@@ -1,37 +1,43 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Quero Carros</h1>
+    <br>
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Quero carro</h1>
+    </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Marca</th>
-      <th>Modelo</th>
-      <th>Preco</th>
-      <th>Nome</th>
-      <th>Telefone</th>
-      <th>Descricao</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @quero_carros.each do |quero_carro| %>
-      <tr>
-        <td><%= quero_carro.marca %></td>
-        <td><%= quero_carro.modelo %></td>
-        <td><%= quero_carro.preco %></td>
-        <td><%= quero_carro.nome %></td>
-        <td><%= quero_carro.telefone %></td>
-        <td><%= quero_carro.descricao %></td>
-        <td><%= link_to 'Show', quero_carro %></td>
-        <td><%= link_to 'Edit', edit_quero_carro_path(quero_carro) %></td>
-        <td><%= link_to 'Destroy', quero_carro, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+    <div class="card shadow mb-4">
+        <div class="card-header py-3"><h6 class="m-0 font-weight-bold text-primary">Lista de pedidos</h6></div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Marca & Modelo</th>
+                            <th>Preço</th>
+                            <th>Telefone</th>
+                            <th>Nome</th>
+                            <th colspan="3"></th>
+                        </tr>
+                    </thead>
 
-<br>
+                    <tbody>
+                      <% @quero_carros.each do |quero_carro| %>
+                        <tr>
+                          <td><%= quero_carro.marca %> - <%= quero_carro.modelo %></td>
+                          <td><%= quero_carro.preco %></td>
+                          <td><%= quero_carro.telefone %></td>
+                          <td><%= quero_carro.nome %></td>
+                          <td><%= link_to 'Show', quero_carro %></td>
+                          <td><%= link_to 'Edit', edit_quero_carro_path(quero_carro) %></td>
+                          <td><%= link_to 'Destroy', quero_carro, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                        </tr>
+                      <% end %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
 
-<%= link_to 'New Quero Carro', new_quero_carro_path %>
+

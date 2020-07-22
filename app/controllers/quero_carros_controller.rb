@@ -1,5 +1,6 @@
 class QueroCarrosController < ApplicationController
   before_action :set_quero_carro, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, :only => [:index, :show, :edit, :update, :destroy]
 
   # GET /quero_carros
   # GET /quero_carros.json
@@ -28,7 +29,7 @@ class QueroCarrosController < ApplicationController
 
     respond_to do |format|
       if @quero_carro.save
-        format.html { redirect_to root_path, notice: 'Quero carro was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Solicitação enviada com sucesso.' }
         format.json { render :show, status: :created, location: @quero_carro }
       else
         format.html { render :new }
