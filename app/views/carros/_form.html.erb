@@ -3,8 +3,13 @@
 
         <br>
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Nova publicação</h1>
-            <button type="submit" class="d-none d-sm-inline-block btn btn-sm btn-df shadow-sm text-white"><i class="fas fa-plus fa-sm text-white-50"></i> Publicar agora</button>
+            <% if @carro.id.present? %>
+                <h1 class="h3 mb-0 text-gray-800">Actualizar publicação</h1>
+                <button type="submit" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm text-white"><i class="fas fa-plus fa-sm text-white-50"></i> Actualizar</button>
+            <% else %>
+                <h1 class="h3 mb-0 text-gray-800">Nova publicação</h1>
+                <button type="submit" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm text-white"><i class="fas fa-plus fa-sm text-white-50"></i> Publicar agora</button>      
+            <% end %>
         </div>
 
         <hr>
@@ -13,36 +18,42 @@
         <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
         <div class="row">
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-3 col-sm-12">
                 <%= f.input :marca, placeholder: "Toyota" %>
                 <%= f.input :modelo, placeholder: "Land Cruse" %>
                 <%= f.input :preco, placeholder: "2200000" %>
                 <%# f.input :combustivel, label: "Tipo de combustível", placeholder: "gasóleo" %>
                 <%# f.input :lucro, label: "Tipo de combustível", placeholder: "lucro a ganhar" %>
             </div>
-            <div class="col-md-6 col-sm-12">
+
+            <div class="col-md-3 col-sm-12">
                 <%= f.input :km, placeholder: "2400" %>
                 <%= f.input :portas, placeholder: "4" %>
                 <%= f.input :matricula, placeholder: "LD-20-09-ZE" %>
-                <%= f.input :cor, placeholder: "Azul" %>
             </div>
-        </div>
 
-        <div class="row">
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-4 col-sm-12">
+                <%= f.input :cor, placeholder: "Azul" %>
                 <%= f.input :destaque, label: "Imagem de destaque" %>
-            </div>
-            <div class="col-md-6 col-sm-12">
                 <br>
+                <label for="carro_files">Outras imagens</label>
                 <%= f.file_field :files, multiple: true, label: "Outras imagens associadas" %>
             </div>
         </div>
 
+
+        <br>
+        <hr>
+        <br>
+
         <div class="row">
-            <div class="col-md-6 col-sm-12">
-                <%= f.input :descricao, placeholder: "descrição do automóvel" %>
+            <div class="col-sm-12">
+                <%= f.rich_text_area :content, placeholder: "descrição do automóvel" %>
             </div>
         </div>
+
+        <br>
+        <br>
 
     </div>
 

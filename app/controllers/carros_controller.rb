@@ -72,7 +72,7 @@ class CarrosController < ApplicationController
     def carro_params
       params.require(:carro).permit(
         :marca, :modelo, :km, :tipo, :portas, :matricula, :cor, :combustivel, :descricao,
-        :preco, :lucro, :disponivel, :destaque, files: []
+        :preco, :lucro, :disponivel, :destaque, :content, files: []
       )
     end
 end

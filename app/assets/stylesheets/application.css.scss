@@ -1,7 +1,29 @@
+
+//= require actiontext
+
 @import "animate.scss";
 
 .heading-section.heading-section-white .subheading {
    color: #ffc107!important;
+}
+
+.link-logo{
+   margin: 0;
+   background: #000;
+   padding: 50px 0;
+}
+
+
+h1.text-gray-800 {
+   color: #000000!important;
+}
+
+.nav-black {
+   color: #000000!important;
+}
+
+.bg-black {
+   background-color: #000000 !important;
 }
 
 .testimony-section .overlay{

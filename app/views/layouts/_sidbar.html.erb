@@ -1,8 +1,7 @@
     <!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-      <!-- Sidebar - Brand -->
-      <a class="sidebar-brand-default d-flex align-items-center justify-content-center" href="/" style="margin: 50px 0;">
+      <a class="sidebar-brand-default d-flex align-items-center justify-content-center link-logo" href="/">
         <br>
         <div class="sidebar-brand-icon"> <%= image_tag 'logo_branco.png',  style: "width: 200px;" %></div>
       </a>
@@ -12,26 +11,26 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="/"><i class="fas fa-fw fa-tachometer-alt"></i> <span>Dashboard</span></a>
+        <a class="nav-link" href="/"><i class="fas fa-fw fa-tachometer-alt nav-black"></i> <span>Dashboard</span></a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="<%= carros_path %>"><i class="fas fa-car"></i> <span>Carros</span></a>
+        <a class="nav-link nav-black" href="<%= carros_path %>"><i class="fas fa-car nav-black"></i> <span>Carros</span></a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="<%= interesses_path %>"><i class="fas fa-fw fa-chart-area"></i> <span>Propostas</span></a>
+        <a class="nav-link nav-black" href="<%= interesses_path %>"><i class="fas fa-fw fa-chart-area nav-black"></i> <span>Propostas</span></a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="<%= quero_carros_path %>"><i class="fas fa-car"></i> <span>Quero carro</span></a>
+        <a class="nav-link nav-black" href="<%= quero_carros_path %>"><i class="fas fa-car nav-black"></i> <span>Quero carro</span></a>
       </li>
 
       <hr class="sidebar-divider d-none d-md-block">
 
       <li class="nav-item">
-        <%= link_to destroy_user_session_url, method: :delete, class: "nav-link" do %>
-          <i class="fas fa-fw fa-sign-out-alt"></i> <span><%= t('logout') %></span>
+        <%= link_to destroy_user_session_url, method: :delete, class: "nav-link nav-black" do %>
+          <i class="fas fa-fw fa-sign-out-alt nav-black"></i> <span><%= t('logout') %></span>
         <% end %>
       </li>
 
