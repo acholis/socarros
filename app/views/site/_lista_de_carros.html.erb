@@ -4,7 +4,7 @@
             <div class="text">
                 <a href="<%= detailhes_path(carro) %>" class="block-20 img" style="background-image: url(<%= url_for(carro.destaque) %>);"></a>
                 <div class="meta mb-1">
-                    <a href="<%= detailhes_path(carro) %>">
+                    <a href="<%= detailhes_path(carro) %>" class="text-link">
                         <%= carro.created_at.strftime("%d/%m/%Y") %> 
                         <span style="float: right;"><%= carro.preco_total.to_kwanza %></span>
                     </a>

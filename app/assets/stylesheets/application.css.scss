@@ -1,8 +1,28 @@
 @import "animate.scss";
 
+.heading-section.heading-section-white .subheading {
+   color: #ffc107!important;
+}
 
+.testimony-section .overlay{
+   background: #000000!important;
+}
+.ftco-footer {
+   background: #000000!important;
+}
 
+.text-link{
+   color: #ffc107!important;
+   font-weight: 100!important;
+   font-size: 15px!important;
+}
 
+button.btn-quero{
+   font-size: 29px!important;
+   box-shadow: 0 4px 9px #21252947 !important;
+   font-weight: 200!important;
+   padding: 10px 60px!important;
+}
 
 .p-df{
    font-size: 25px!important;
@@ -12,6 +32,7 @@
 
 .card {
    border-radius: 0!important;
+   border: 1px solid #ffc107!important;
 }
 
 .modal-content{
