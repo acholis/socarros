@@ -8027,7 +8027,7 @@ h1, h2, h3, h4, h5,
   max-width: 1250px; }
 
 .text-primary {
-  color: #21bf73 !important; }
+  color: #ffc107 !important; }
 
 .ftco-navbar-light {
   background: transparent !important;
@@ -8149,7 +8149,7 @@ h1, h2, h3, h4, h5,
         padding-right: 0 !important;
         padding-bottom: 0 !important; } }
     .ftco-navbar-light.scrolled .nav-item.active > a {
-      color: #21bf73 !important; }
+      color: #ffc107 !important; }
     .ftco-navbar-light.scrolled .nav-item.cta > a {
       color: #fff !important;
       background: #21bf73;
@@ -8188,7 +8188,7 @@ h1, h2, h3, h4, h5,
       padding-bottom: 0.9rem !important;
       color: #000000 !important; }
       .ftco-navbar-light.scrolled .nav-link.active {
-        color: #21bf73 !important; }
+        color: #ffc107 !important; }
     .ftco-navbar-light.scrolled.awake {
       margin-top: 0px;
       -webkit-transition: .3s all ease-out;
@@ -8320,7 +8320,7 @@ h1, h2, h3, h4, h5,
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       margin-top: -10px;
-      color: #21bf73 !important;
+      color: #ffc107 !important;
       -moz-transition: all 0.7s ease;
       -o-transition: all 0.7s ease;
       -webkit-transition: all 0.7s ease;
@@ -8709,7 +8709,7 @@ h1, h2, h3, h4, h5,
   border-style: solid;
   position: absolute;
   top: 0;
-  border-color: #21bf73 !important; }
+  border-color: #ffc107 !important; }
 
 .progress-circle .progress .progress-left .progress-bar {
   left: 100%;
@@ -9520,7 +9520,7 @@ textarea.form-control {
     width: 100%; }
 
 .contactForm .label {
-  color: #21bf73 !important;
+  color: #ffc107 !important;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 600; }
@@ -9552,7 +9552,7 @@ textarea.form-control {
     /* Firefox 18- */
     color: rgba(0, 0, 0, 0.5) !important; }
   .contactForm .form-control:focus, .contactForm .form-control:active {
-    border-color: #21bf73 !important; }
+    border-color: #ffc107 !important; }
 
 .contactForm textarea.form-control {
   height: inherit !important; }

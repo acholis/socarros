@@ -1,5 +1,43 @@
 @import "animate.scss";
 
+
+
+
+
+.p-df{
+   font-size: 25px!important;
+    color: #ffa922!important;
+    font-weight: 100!important;
+}
+
+.card {
+   border-radius: 0!important;
+}
+
+.modal-content{
+   border-radius: 0!important;
+}
+.ftco-navbar-light .navbar-brand {
+   color: #ffc107!important;
+   font-size: 30px!important;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item.active > a {
+   color: #ffc107!important;
+}
+
+.ftco-navbar-light.scrolled .nav-item.active > a {
+   color: #ffc107 !important;
+}
+
+.text-encontre{
+   color: #ffc107;
+   font-weight: 100;
+   font-size: 50px;
+   margin-bottom: -15px;
+}
+
+
 .bg-login-image{
    background-size: 80%!important;
    background-repeat: no-repeat!important;
@@ -57,7 +95,7 @@
 }
 
 .btn{
-   font-weight: 300!important;
+   font-weight: 500!important;
    border-radius: 0!important;
 }
 

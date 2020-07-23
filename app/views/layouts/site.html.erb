@@ -4,11 +4,26 @@
     <title>.:: Só carros ::.</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <%= favicon_link_tag '/favicon.ico' %>
-
-    <%= stylesheet_link_tag 'application', media: 'all' %>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="<%= meta_description %>">
+    <meta name="keywords" content="<%= meta_keywords %>">
+    <meta name="distribution" content="web">
+    <meta name="geo.region" content="Angola +244">
+
+    <!-- Facebook SEO -->
+    <meta property="og:title" content="<%= meta_title_fb %>">
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="<%= meta_description %>">
+    <meta property="og:site_name" content="Só carros" />
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="<%= "#{root_url}/logo.png" %>">
+    <meta property="og:url" content="<%= root_url %>">
+
+    <%= favicon_link_tag '/favicon.ico' %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
