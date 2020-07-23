@@ -1,14 +1,11 @@
 class InteressesController < ApplicationController
   before_action :set_interess, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, :only => [:index, :show, :edit, :update, :destroy]
 
-  # GET /interesses
-  # GET /interesses.json
   def index
     @interesses = Interesse.all
   end
 
-  # GET /interesses/1
-  # GET /interesses/1.json
   def show
   end
 
@@ -28,7 +25,7 @@ class InteressesController < ApplicationController
 
     respond_to do |format|
       if @interess.save
-        format.html { redirect_to root_path, notice: 'Interesse was successfully created.' }
+        format.html { redirect_to root_path, notice: 'A sua solicitação foi enviada com sucesso.' }
         format.json { render :show, status: :created, location: @interess }
       else
         format.html { render :new }
