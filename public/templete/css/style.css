@@ -8405,11 +8405,11 @@ h1, h2, h3, h4, h5,
   .btn:hover, .btn:active, .btn:focus {
     outline: none; }
   .btn.btn-primary {
-    background: #21bf73 !important;
-    border: 1px solid #21bf73 !important;
+    background: #ffc107 !important;
+    border: 1px solid #ffc107 !important;
     color: #fff !important; }
     .btn.btn-primary:hover {
-      border: 1px solid #21bf73;
+      border: 1px solid #e7af04;
       background: transparent;
       color: #21bf73; }
     .btn.btn-primary.btn-outline-primary {
@@ -8892,7 +8892,7 @@ textarea.form-control {
     width: 100%; }
     .ftco-appointment .half h2 {
       font-weight: 700;
-      color: #21bf73; }
+      color: #ffc107; }
 
 .appointment .form-group {
   position: relative;
